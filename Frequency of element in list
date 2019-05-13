@@ -1,0 +1,13 @@
+
+import collections
+
+t = int(input())
+for i in range(0,t):
+    size = int(input())
+    array1=[]
+    array1 = list(map(int, input().split()))
+    counter = collections.Counter(array1)
+    for c in counter:
+        if(counter[c]==1):
+            print(c)
+            
