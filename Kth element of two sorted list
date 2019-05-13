@@ -1,0 +1,10 @@
+
+for i in range(int(input())):
+    size = list(map(int, input().split()))
+    k = size[2]
+    array1 = list(map(int, input().split()))
+    array2 = list(map(int, input().split()))
+    array1 = array1 + array2
+    array1 = sorted(array1)
+    print(array1[k-1])
+            
