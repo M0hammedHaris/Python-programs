@@ -1,0 +1,9 @@
+#code
+for t in range(int(input())):
+    s = int(input())
+    arr = list(map(int, input().split()))
+    c = arr.count(0)
+    for _ in range(0,c):
+        arr.remove(0)
+        arr.append(0)
+    print(*arr, sep=' ')
