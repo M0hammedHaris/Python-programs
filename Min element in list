@@ -1,0 +1,7 @@
+
+#code
+for _ in range (int(input())):
+    size = int(input())
+    array1 = list(map(int, input().split()))
+    array1 = sorted(array1)
+    print(array1[0])
