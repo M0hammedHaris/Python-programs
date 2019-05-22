@@ -1,0 +1,13 @@
+
+import math
+def perfect_sqr(num1,num2):
+    for i in range (num1,num2+1):
+        root = math.sqrt(i)
+        if int(root + 0.5) ** 2 == i:
+            print(i, "is a perfect square")
+        '''else:
+            print(i, "is not a perfect square")'''
+        
+number = int(input())
+number2 = int(input())
+perfect_sqr(number,number2)
