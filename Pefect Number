@@ -1,0 +1,14 @@
+
+def perfect_num(n):
+    sum_ = 0
+    for i in range (1,n):
+        if  n % i == 0:
+            sum_ += i 
+    if sum_ == n:
+        print("The number ",n," is a Perfect number!")
+    else:
+        print("The number ",n," is not a Perfect number!")        
+
+
+number1 = int(input())
+perfect_num(number1)
