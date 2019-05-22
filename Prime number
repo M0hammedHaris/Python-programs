@@ -1,0 +1,13 @@
+
+def prime_num(n1):
+    if n1 > 1:
+        for num in range (2 ,n1):
+            if (n1 % num) == 0:
+                print ('Not prime number')
+                break
+        else:
+            print('Prime number')
+
+
+number1 = int(input())
+prime_num(number1)
