@@ -1,0 +1,16 @@
+
+def power_2(num):
+    temp = 2
+    while True:
+        if num == temp:
+            print (num , 'power of 2')
+            break
+        elif temp > num:
+            print (num , 'not power of 2')
+            break
+        else:
+            temp = temp * 2
+            
+
+number = int(input())
+power_2(number)
