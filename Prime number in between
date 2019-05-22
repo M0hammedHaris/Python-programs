@@ -1,0 +1,15 @@
+
+def prime_num_between(n1,n2):
+    print ("Prime number between",n1,'and',n2,':')
+    for i in range (n1,n2+1):
+        if i > 1:
+            for num in range (2 ,i):
+                if (i % num) == 0:
+                    break
+            else:
+                print(i)
+
+
+number1 = int(input())
+number2 = int(input())
+prime_num_between(number1,number2)
