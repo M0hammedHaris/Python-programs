@@ -1,13 +1,16 @@
-
+#input
 lis = list(map(int,input().split()))
 
+#initializing dict
 dic = {}
 for num in set(lis):
     dic[num] = 0
     
+#geting count
 for num in lis:
     dic[num] += 1
     
+#creating sorted list
 s_list = []
 for num in lis:
     if lis.count(num) == 1:
@@ -15,6 +18,7 @@ for num in lis:
 
 s_list1 = sorted(dic,key = dic.__getitem__)
 
+#printing
 for num in s_list:
     for rep in range(dic[num]):
         print(num,end=" ")
