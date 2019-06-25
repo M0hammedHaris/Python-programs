@@ -1,0 +1,24 @@
+
+lis = list(map(int,input().split()))
+
+dic = {}
+for num in set(lis):
+    dic[num] = 0
+    
+for num in lis:
+    dic[num] += 1
+    
+s_list = []
+for num in lis:
+    if lis.count(num) == 1:
+        s_list.append(num)
+
+s_list1 = sorted(dic,key = dic.__getitem__)
+
+for num in s_list:
+    for rep in range(dic[num]):
+        print(num,end=" ")
+
+for num in range(len(s_list),len(s_list1)):
+    for rep in range(dic[s_list1[num]]):
+        print(s_list1[num],end=" ")
