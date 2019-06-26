@@ -1,0 +1,24 @@
+n = int(input())
+p = 1
+ans =0
+while n >= p:
+    rem = (n//p)%10
+    ans = ans*10 +rem
+    p = p*10
+
+print(ans)
+
+####Replace a digit in a number#####
+n = int(input())
+e_t_f = int(input())
+e_t_r = int(input())
+p = 1
+ans =0
+while n >= p:
+    rem = (n//p)%10
+    if rem == e_t_f:
+        rem = e_t_r
+    ans = ans +rem*p
+    p = p*10
+
+print(ans)
